@@ -307,17 +307,20 @@ export class MainLayoutComponent {
   salesReports = [
     { name: 'Sales by Region', url: '/reports/sales/sales-by-region' },
     { name: 'Sales by Region - Tabular', url: '/reports/sales/sales-by-region-tabular' },
-    // Add more reports as needed
+    // Added Sales by Customer Component to the side menu
+    { name: 'Sales by Customer', url: '/reports/sales/sales-by-customer' }
   ];
 
   agentPerformanceReports = [
-    { name: 'Call Duration by Date Range', url: '/reports/agent-performance/call-duration-by-date-range' }
-    // Add more reports as needed
+    { name: 'Call Duration by Date Range', url: '/reports/agent-performance/call-duration-by-date-range' },
+    // Added Display Component to the side menu
+    { name: 'Call Duration by Date Range Display', url: '/reports/agent-performance/call-duration-by-date-range-display' }
   ];
 
   customerFeedbackReports = [
-    { name: 'Channel Rating by Month', url: '/reports/customer-feedback/channel-rating-by-month' }
-    // Add more reports as needed
+    { name: 'Channel Rating by Month', url: '/reports/customer-feedback/channel-rating-by-month' },
+    // Link to Feedback by Product
+    { name: 'Customer Feedback by Product', url: '/reports/customer-feedback/feedback-by-product' }
   ];
 
   constructor(private cookieService: CookieService, private router: Router) {
